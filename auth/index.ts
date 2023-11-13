@@ -1,4 +1,4 @@
-const {LibsqlError} = require('@libsql/client');
+import {LibsqlError} from '@libsql/client';
 import {LuciaError, Session} from 'lucia';
 import {ZodType} from 'zod';
 import {auth} from './lucia';
