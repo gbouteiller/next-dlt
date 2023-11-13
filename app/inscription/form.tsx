@@ -34,7 +34,7 @@ export default function SignupForm() {
       <FormInput register={register} name="email" label="Courriel" errors={errors} type="email" />
       <FormInput register={register} name="password" label="Mot de passe" errors={errors} type="password" />
       <button type="submit" className="btn btn-primary mt-8">
-        {isPending ? <>Inscription en cours...</> : <>Je m'inscris</>}
+        {isPending ? <>Inscription en cours...</> : <>Je m&apos;inscris</>}
       </button>
     </form>
   );

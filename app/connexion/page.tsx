@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Form from './form';
-import * as context from 'next/headers';
-import {redirect} from 'next/navigation';
 import {auth} from '@/auth/lucia';
+import * as context from 'next/headers';
+import Link from 'next/link';
+import {redirect} from 'next/navigation';
+import Form from './form';
 
 export default async function SigninPage() {
   const authRequest = auth.handleRequest('GET', context);
@@ -16,7 +16,7 @@ export default async function SigninPage() {
           <h1 className="card-title">Connexion</h1>
           <Form />
           <Link href="/inscription" className="btn btn-link self-end px-0">
-            Je m'inscris
+            Je m&apos;inscris
           </Link>
         </div>
       </div>
