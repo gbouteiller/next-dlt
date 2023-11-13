@@ -1,0 +1,44 @@
+{
+  "name": "next-dlt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:studio": "drizzle-kit studio --verbose",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "@libsql/client": "^0.3.6",
+    "@lucia-auth/adapter-sqlite": "^2.0.1",
+    "better-sqlite3": "^9.1.1",
+    "drizzle-orm": "^0.29.0",
+    "lucia": "^2.7.4",
+    "next": "14.0.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "daisyui": "^4.0.3",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.20.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "eslint-config-prettier": "^9.0.0",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
